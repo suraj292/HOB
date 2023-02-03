@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class SlugUrl extends Model
 {
     use HasFactory;
+    protected $fillable = [
+      'product_id',
+      'collection_id',
+      'slug_title',
+      'header',
+      'footer',
+    ];
 }

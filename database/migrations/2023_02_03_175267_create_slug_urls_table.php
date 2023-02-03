@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('slug_urls', function (Blueprint $table) {
             $table->id();
             $table->foreignId('product_id')->nullable()->constrained('products')->onDelete('cascade');
-            //$table->string('collection_id')->nullable();
+            $table->foreignId('collection_id')->nullable()->constrained('collections')->onDelete('cascade');
             //$table->string('blog_id')->nullable();
             $table->string('slug_title');
             $table->longText('header')->nullable();
