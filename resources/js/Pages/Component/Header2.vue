@@ -60,7 +60,7 @@
                                                         <a href="#">Hot Promotions</a>
                                                         <div class="menu-banner-wrap">
                                                             <div class="menu-banner-1-wrap">
-                                                                <a href="product-details.html"><img src="assets/images/menu/menu-banner-1.jpg" alt=""></a>
+                                                                <a href="product-details.html"><img src="/assets/images/menu/menu-banner-1.jpg" alt=""></a>
                                                                 <div class="menu-banner-content-1">
                                                                     <span>Graphic Tees</span>
                                                                     <h4>Save up to 50%</h4>
@@ -68,7 +68,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="menu-banner-2-wrap">
-                                                                <a href="product-details.html"><img src="assets/images/menu/menu-banner-2.jpg" alt=""></a>
+                                                                <a href="product-details.html"><img src="/assets/images/menu/menu-banner-2.jpg" alt=""></a>
                                                                 <div class="menu-banner-content-2">
                                                                     <span>Belt shirt dress</span>
                                                                     <h4>Spring Summer</h4>
