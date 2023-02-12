@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
+use App\Http\Controllers\Controller;
 use App\Models\UserAddress;
 use Illuminate\Http\Request;
 
@@ -76,18 +77,11 @@ class AddressController extends Controller
      */
     public function show($id)
     {
-        //
-    }
+        $address = UserAddress::find($id);
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
+        return response([
+            'Address' => $address
+        ], 200);
     }
 
     /**
@@ -99,7 +93,23 @@ class AddressController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = $request->validate([
+            'user_name' => 'required',
+            'mobile' => 'required|integer|digits:10',
+            'address' => 'required',
+            'pin_code' => 'required|integer',
+            'landmark' => 'nullable',
+            'city' => 'required',
+            'state' => 'required',
+            'country' => 'required'
+        ]);
+        $address = UserAddress::find($id);
+        $address->update($data);
+
+        return response([
+            'message' => 'Address updated',
+            'Address' => $address
+        ], 200);
     }
 
     /**
@@ -110,6 +120,12 @@ class AddressController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $address = UserAddress::find($id);
+        $address->delete();
+
+        return response([
+            'message' => 'Address has been deleted',
+            'Address' => $address
+        ]);
     }
 }

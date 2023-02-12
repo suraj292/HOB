@@ -16,4 +16,9 @@ class ProductSubCategory extends Model
         'alt',
         'banner',
     ];
+
+    public function category()
+    {
+        return $this->belongsTo(ProductCategory::class);
+    }
 }
