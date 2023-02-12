@@ -150,7 +150,7 @@
                     </nav>
                 </div>
                 <div class="aside-banner">
-                    <a href="product-details.html"><img src="assets/images/banner/aside-banner.jpg" alt="banner"></a>
+                    <a href="product-details.html"><img src="/assets/images/banner/aside-banner.jpg" alt="banner"></a>
                 </div>
                 <div class="aside-contact-info">
                     <ul>
@@ -166,7 +166,7 @@
                     <a href="#"><i class="lastudioicon-b-instagram"></i></a>
                 </div>
                 <div class="aside-payments">
-                    <img src="assets/images/icon-img/payments.png" alt="banner">
+                    <img src="/assets/images/icon-img/payments.png" alt="banner">
                 </div>
                 <div class="copyright-2">
                     <p>© 2023 <a href="https://hasthemes.com/">Lauriel.</a> All rights reserved</p>
