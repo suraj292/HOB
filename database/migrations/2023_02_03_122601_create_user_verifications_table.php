@@ -16,10 +16,10 @@ return new class extends Migration
         Schema::create('user_verifications', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
-            $table->date('email')->nullable();
-            $table->date('mobile')->nullable();
-            $table->date('google')->nullable();
-            $table->date('facebook')->nullable();
+            $table->string('email')->nullable();
+            $table->string('mobile')->nullable();
+            $table->string('google')->nullable();
+            $table->string('facebook')->nullable();
         });
     }
 

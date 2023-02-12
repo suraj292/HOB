@@ -198,6 +198,33 @@ export default {
                 }
             ]
         });
+        /*---------------------------------------
+            Product details small image slider
+        -----------------------------------------*/
+        $('.product-dec-slider-small').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            asNavFor: '.pro-dec-big-img-slider',
+            dots: false,
+            focusOnSelect: true,
+            fade: false,
+            prevArrow: '<span class="pro-dec-prev"><i class="lastudioicon-left-arrow"></i></span>',
+            nextArrow: '<span class="pro-dec-next"><i class="lastudioicon-right-arrow"></i></span>',
+            responsive: [{
+                breakpoint: 767,
+                settings: {
+
+                }
+            },
+                {
+                    breakpoint: 575,
+                    settings: {
+                        autoplay: true,
+                        slidesToShow: 4,
+                    }
+                }
+            ]
+        });
         /*----------------------------------------
             Product details small image slider 2
         ------------------------------------------*/
@@ -317,37 +344,16 @@ export default {
                 }
             ]
         });
-        /*---------------------------------------
-            Product details small image slider
-        -----------------------------------------*/
-        $('.product-dec-slider-small').slick({
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            asNavFor: '.pro-dec-big-img-slider',
-            dots: false,
-            focusOnSelect: true,
-            fade: false,
-            prevArrow: '<span class="pro-dec-prev"><i class="lastudioicon-left-arrow"></i></span>',
-            nextArrow: '<span class="pro-dec-next"><i class="lastudioicon-right-arrow"></i></span>',
-            responsive: [{
-                breakpoint: 767,
-                settings: {
 
-                }
-            },
-                {
-                    breakpoint: 575,
-                    settings: {
-                        autoplay: true,
-                        slidesToShow: 4,
-                    }
-                }
-            ]
-        });
     }
 }
 </script>
 
 <style scoped>
-
+.draggable{
+    height: auto !important;
+}
+.slick-list{
+    height: auto !important;
+}
 </style>
