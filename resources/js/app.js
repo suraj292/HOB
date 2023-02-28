@@ -1,5 +1,4 @@
 import './bootstrap';
-// import('./main')
 
 import {createApp} from "vue";
 

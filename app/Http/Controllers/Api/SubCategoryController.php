@@ -19,7 +19,7 @@ class SubCategoryController extends Controller
         $subCategory = ProductSubCategory::all();
 
         return response([
-           'Sub Category' => $subCategory
+           'data' => $subCategory
         ]);
     }
 
@@ -49,7 +49,7 @@ class SubCategoryController extends Controller
         ]);
 
         return response([
-           'SubCategory' => $subCategory,
+           'data' => $subCategory,
         ]);
     }
 
@@ -64,7 +64,7 @@ class SubCategoryController extends Controller
         $subCategory = ProductSubCategory::find($id);
 
         return response([
-           'Sub Category' => $subCategory
+           'data' => $subCategory
         ]);
     }
 
@@ -91,7 +91,7 @@ class SubCategoryController extends Controller
         $subCategory->update($data);
         return response([
            'message' => 'Sub Category has been update.',
-           'Sub Category' => $data,
+           'data' => $data,
         ]);
     }
 
@@ -108,6 +108,22 @@ class SubCategoryController extends Controller
 
         return response([
            'message' => 'Sub Category has been deleted',
+        ]);
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function subCategoryWhere($id)
+    {
+        $subCategory = ProductSubCategory::where('product_category_id', $id)->get();
+
+        return response([
+           'subCategory' => $subCategory,
         ]);
     }
 }

@@ -21,12 +21,12 @@ return new class extends Migration
             $table->string('size');
             $table->string('description');
             $table->decimal('price', 8, 2);
-            $table->decimal('offer_price', 8, 2);
+            $table->decimal('offer_price', 8, 2)->nullable();
             $table->string('gender');
             $table->char('tags')->nullable();
-            $table->boolean('sale')->default(0);
-            $table->boolean('italian')->default(0);
-            $table->boolean('return')->default(0);
+            $table->boolean('sale')->nullable()->default(0);
+            $table->boolean('italian')->nullable()->default(0);
+            $table->boolean('return')->nullable()->default(0);
             $table->timestamps();
         });
     }

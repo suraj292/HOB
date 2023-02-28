@@ -22,4 +22,14 @@ class Product extends Model
         'italian',
         'return',
     ];
+
+    public function category()
+    {
+        return $this->belongsTo(ProductSubCategory::class);
+    }
+
+    public function image()
+    {
+        return $this->hasMany(ProductColorImage::class);
+    }
 }

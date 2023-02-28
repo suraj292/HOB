@@ -19,9 +19,11 @@ return new class extends Migration
             $table->foreignId('product_id')->constrained('products')->onDelete('cascade');
             $table->foreignId('product_color_id')->constrained('product_color_images')->onDelete('cascade');
             $table->integer('quantity')->default(1);
+            $table->string('color');
             $table->string('image');
             $table->decimal('price')->nullable();
             $table->decimal('offer_price')->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

@@ -16,55 +16,19 @@ import Wishlist from './Pages/Wishlist/Index.vue';
 import NotFound from './Pages/Component/404.vue';
 
 const routes = [
-    {
-        path:'/',
-        name: 'home',
-        component:Home
-    },{
-        path:'/product',
-        name: 'product',
-        component:Product
-    },{
-        path:'/product/detail',
-        name: 'productDetail',
-        component:ProductDetail
-    },{
-        path:'/login-register',
-        name: 'loginRegister',
-        component:LoginRegister
-    },{
-        path:'/my-account',
-        name: 'myAccount',
-        component:MyAccount
-    },{
-        path:'/about',
-        name: 'about',
-        component:About
-    },{
-        path:'/blog',
-        name: 'blog',
-        component:Blog
-    },{
-        path:'/blog-detail',
-        name: 'blogDetail',
-        component:BlogDetail
-    },{
-        path:'/cart',
-        name: 'cart',
-        component:Cart
-    },{
-        path:'/checkout',
-        name: 'checkout',
-        component:Checkout
-    },{
-        path:'/wishlist',
-        name: 'wishlist',
-        component:Wishlist
-    },{
-        path:'/contact-us',
-        name: 'contact',
-        component:Contact
-    },{ path: '/:pathMatch(.*)', name: 'notFound', component: NotFound }
+    { path:'/', name: 'home', component:Home },
+    { path:'/product', name: 'product', component:Product },
+    { path:'/product/detail', name: 'productDetail', component:ProductDetail },
+    { path:'/login-register', name: 'loginRegister', component:LoginRegister },
+    { path:'/my-account', name: 'myAccount', component:MyAccount },
+    { path:'/about', name: 'about', component:About },
+    { path:'/blog', name: 'blog', component:Blog },
+    { path:'/blog-detail', name: 'blogDetail', component:BlogDetail },
+    { path:'/cart', name: 'cart', component:Cart },
+    { path:'/checkout', name: 'checkout', component:Checkout },
+    { path:'/wishlist', name: 'wishlist', component:Wishlist },
+    { path:'/contact-us', name: 'contact', component:Contact },
+    // { path: '/:pathMatch(.*)', name: 'notFound', component: NotFound },
 ];
 
 const router = createRouter({

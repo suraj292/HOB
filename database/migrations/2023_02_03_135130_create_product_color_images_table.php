@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('product_color_images', function (Blueprint $table) {
             $table->id();
             $table->foreignId('product_id')->constrained('products')->onDelete('cascade');
-            $table->boolean('published')->default(0);
+            $table->boolean('published')->nullable();
             $table->string('color_icon');
             $table->string('color_name');
             $table->string('product_images');

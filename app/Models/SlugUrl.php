@@ -9,6 +9,8 @@ class SlugUrl extends Model
 {
     use HasFactory;
     protected $fillable = [
+      'category_id',
+      'sub_category_id',
       'product_id',
       'collection_id',
       'slug_title',
