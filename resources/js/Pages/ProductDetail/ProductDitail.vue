@@ -8,9 +8,7 @@
                             <a class="active" data-bs-toggle="tab" href="#des-details1">Description</a>
                             <a data-bs-toggle="tab" href="#des-details2">Additional information</a>
                             <a data-bs-toggle="tab" href="#des-details3">Reviews (1)</a>
-                            <a data-bs-toggle="tab" href="#des-details4"> About Brand</a>
-                            <a data-bs-toggle="tab" href="#des-details5">Vendor Info</a>
-                            <a data-bs-toggle="tab" href="#des-details6">More Products</a>
+<!--                            <a data-bs-toggle="tab" href="#des-details6">More Products</a>-->
                         </div>
                         <div class="tab-content description-review-bottom">
                             <div id="des-details1" class="tab-pane active">
@@ -120,115 +118,98 @@
                                     </div>
                                 </div>
                             </div>
-                            <div id="des-details4" class="tab-pane ">
-                                <div class="about-brand-wrap">
-                                    <p>In elit risus, volutpat sed vestibulum sit amet, bibendum in lorem. Etiam aliquet convallis nibh at tempus. Proin gravida tincidunt egestas. Curabitur porta nibh ac enim semper, vitae pretium ante sollicitudin.</p>
-                                    <p>Duis efficitur gravida tincidunt. Nam sodales vel odio at sollicitudin. Vestibulum sed rutrum nisl. Nulla diam arcu, facilisis nec blandit non, interdum et orci. Duis efficitur gravida tincidunt. Nam sodales vel odio at sollicitudin. Vestibulum sed rutrum nisl. Nulla diam arcu, facilisis nec blandit non, interdum et orci. Nam aliquam lorem vitae risus molestie convallis.</p>
-                                </div>
-                            </div>
-                            <div id="des-details5" class="tab-pane">
-                                <div class="vendor-info-content">
-                                    <h3>Vendor Information</h3>
-                                    <ul>
-                                        <li>Store Name: HasTech Fashion </li>
-                                        <li> Vendor: HasTech Fashion</li>
-                                        <li><b>Address:</b> PO Box 16122 Collins Street West <br>Melbourne Victoria </li>
-                                        <li class="rating"><span><i class="lastudioicon-star-rate-1"></i><i class="lastudioicon-star-rate-1"></i><i class="lastudioicon-star-rate-1"></i><i class="lastudioicon-star-rate-1"></i><i class="lastudioicon-star-rate-1"></i></span>5.00 rating from 1 review</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div id="des-details6" class="tab-pane product-responsive">
-                                <div class="row">
-                                    <div class="col-xl-3 col-lg-3 col-md-6 col-12 col-sm-6">
-                                        <div class="product-wrap mb-35">
-                                            <div class="product-img mb-15">
-                                                <a href="product-details.html">
-                                                    <img class="default-img" src="/assets/images/product/hm-fashion-pro5-1.jpg" alt="">
-                                                    <img class="hover-img" src="/assets/images/product/hm-fashion-pro5-2.jpg" alt="">
-                                                </a>
-                                                <div class="product-action-wrap">
-                                                    <button data-bs-toggle="tooltip" data-original-title="Add to Cart"><i class="lastudioicon-shopping-cart-3"></i></button>
-                                                    <button data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="lastudioicon-eye"></i><span>Quick View</span></button>
-                                                    <button data-bs-toggle="tooltip" data-original-title="Add to Wishlist"><i class="lastudioicon-heart-2"></i></button>
-                                                    <button data-bs-toggle="tooltip" data-original-title="Add to Compare"><i class="lastudioicon-compare"></i></button>
-                                                </div>
-                                            </div>
-                                            <div class="product-content">
-                                                <h4><a href="product-details.html">Midi printed dress</a></h4>
-                                                <div class="product-price">
-                                                    <span>$49.99</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-lg-3 col-md-6 col-12 col-sm-6">
-                                        <div class="product-wrap mb-35">
-                                            <div class="product-img mb-15">
-                                                <a href="product-details.html">
-                                                    <img class="default-img" src="/assets/images/product/hm-fashion-pro6-1.jpg" alt="">
-                                                    <img class="hover-img" src="/assets/images/product/hm-fashion-pro6-2.jpg" alt="">
-                                                </a>
-                                                <div class="product-action-wrap">
-                                                    <button data-bs-toggle="tooltip" data-original-title="Add to Cart"><i class="lastudioicon-shopping-cart-3"></i></button>
-                                                    <button data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="lastudioicon-eye"></i><span>Quick View</span></button>
-                                                    <button data-bs-toggle="tooltip" data-original-title="Add to Wishlist"><i class="lastudioicon-heart-2"></i></button>
-                                                    <button data-bs-toggle="tooltip" data-original-title="Add to Compare"><i class="lastudioicon-compare"></i></button>
-                                                </div>
-                                            </div>
-                                            <div class="product-content">
-                                                <h4><a href="product-details.html">Midi printed dress</a></h4>
-                                                <div class="product-price">
-                                                    <span>$49.99</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-lg-3 col-md-6 col-12 col-sm-6">
-                                        <div class="product-wrap mb-35">
-                                            <div class="product-img mb-15">
-                                                <a href="product-details.html">
-                                                    <img class="default-img" src="/assets/images/product/hm-fashion-pro7-1.jpg" alt="">
-                                                    <img class="hover-img" src="/assets/images/product/hm-fashion-pro7-2.jpg" alt="">
-                                                </a>
-                                                <div class="product-action-wrap">
-                                                    <button data-bs-toggle="tooltip" data-original-title="Add to Cart"><i class="lastudioicon-shopping-cart-3"></i></button>
-                                                    <button data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="lastudioicon-eye"></i><span>Quick View</span></button>
-                                                    <button data-bs-toggle="tooltip" data-original-title="Add to Wishlist"><i class="lastudioicon-heart-2"></i></button>
-                                                    <button data-bs-toggle="tooltip" data-original-title="Add to Compare"><i class="lastudioicon-compare"></i></button>
-                                                </div>
-                                            </div>
-                                            <div class="product-content">
-                                                <h4><a href="product-details.html">Midi printed dress</a></h4>
-                                                <div class="product-price">
-                                                    <span>$49.99</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-lg-3 col-md-6 col-12 col-sm-6">
-                                        <div class="product-wrap mb-35">
-                                            <div class="product-img mb-15">
-                                                <a href="product-details.html">
-                                                    <img class="default-img" src="/assets/images/product/hm-fashion-pro8-1.jpg" alt="">
-                                                    <img class="hover-img" src="/assets/images/product/hm-fashion-pro8-2.jpg" alt="">
-                                                </a>
-                                                <div class="product-action-wrap">
-                                                    <button data-bs-toggle="tooltip" data-original-title="Add to Cart"><i class="lastudioicon-shopping-cart-3"></i></button>
-                                                    <button data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="lastudioicon-eye"></i><span>Quick View</span></button>
-                                                    <button data-bs-toggle="tooltip" data-original-title="Add to Wishlist"><i class="lastudioicon-heart-2"></i></button>
-                                                    <button data-bs-toggle="tooltip" data-original-title="Add to Compare"><i class="lastudioicon-compare"></i></button>
-                                                </div>
-                                            </div>
-                                            <div class="product-content">
-                                                <h4><a href="product-details.html">Midi printed dress</a></h4>
-                                                <div class="product-price">
-                                                    <span>$19.99 - 49.99</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+<!--                            <div id="des-details6" class="tab-pane product-responsive">-->
+<!--                                <div class="row">-->
+<!--                                    <div class="col-xl-3 col-lg-3 col-md-6 col-12 col-sm-6">-->
+<!--                                        <div class="product-wrap mb-35">-->
+<!--                                            <div class="product-img mb-15">-->
+<!--                                                <a href="product-details.html">-->
+<!--                                                    <img class="default-img" src="/assets/images/product/hm-fashion-pro5-1.jpg" alt="">-->
+<!--                                                    <img class="hover-img" src="/assets/images/product/hm-fashion-pro5-2.jpg" alt="">-->
+<!--                                                </a>-->
+<!--                                                <div class="product-action-wrap">-->
+<!--                                                    <button data-bs-toggle="tooltip" data-original-title="Add to Cart"><i class="lastudioicon-shopping-cart-3"></i></button>-->
+<!--                                                    <button data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="lastudioicon-eye"></i><span>Quick View</span></button>-->
+<!--                                                    <button data-bs-toggle="tooltip" data-original-title="Add to Wishlist"><i class="lastudioicon-heart-2"></i></button>-->
+<!--                                                    <button data-bs-toggle="tooltip" data-original-title="Add to Compare"><i class="lastudioicon-compare"></i></button>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                            <div class="product-content">-->
+<!--                                                <h4><a href="product-details.html">Midi printed dress</a></h4>-->
+<!--                                                <div class="product-price">-->
+<!--                                                    <span>$49.99</span>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="col-xl-3 col-lg-3 col-md-6 col-12 col-sm-6">-->
+<!--                                        <div class="product-wrap mb-35">-->
+<!--                                            <div class="product-img mb-15">-->
+<!--                                                <a href="product-details.html">-->
+<!--                                                    <img class="default-img" src="/assets/images/product/hm-fashion-pro6-1.jpg" alt="">-->
+<!--                                                    <img class="hover-img" src="/assets/images/product/hm-fashion-pro6-2.jpg" alt="">-->
+<!--                                                </a>-->
+<!--                                                <div class="product-action-wrap">-->
+<!--                                                    <button data-bs-toggle="tooltip" data-original-title="Add to Cart"><i class="lastudioicon-shopping-cart-3"></i></button>-->
+<!--                                                    <button data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="lastudioicon-eye"></i><span>Quick View</span></button>-->
+<!--                                                    <button data-bs-toggle="tooltip" data-original-title="Add to Wishlist"><i class="lastudioicon-heart-2"></i></button>-->
+<!--                                                    <button data-bs-toggle="tooltip" data-original-title="Add to Compare"><i class="lastudioicon-compare"></i></button>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                            <div class="product-content">-->
+<!--                                                <h4><a href="product-details.html">Midi printed dress</a></h4>-->
+<!--                                                <div class="product-price">-->
+<!--                                                    <span>$49.99</span>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="col-xl-3 col-lg-3 col-md-6 col-12 col-sm-6">-->
+<!--                                        <div class="product-wrap mb-35">-->
+//                                            <div class="product-img mb-15">
+//                                                <a href="product-details.html">
+//                                                    <img class="default-img" src="/assets/images/product/hm-fashion-pro7-1.jpg" alt="">
+//                                                    <img class="hover-img" src="/assets/images/product/hm-fashion-pro7-2.jpg" alt="">
+//                                                </a>
+//                                                <div class="product-action-wrap">
+//                                                    <button data-bs-toggle="tooltip" data-original-title="Add to Cart"><i class="lastudioicon-shopping-cart-3"></i></button>
+//                                                    <button data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="lastudioicon-eye"></i><span>Quick View</span></button>
+//                                                    <button data-bs-toggle="tooltip" data-original-title="Add to Wishlist"><i class="lastudioicon-heart-2"></i></button>
+//                                                    <button data-bs-toggle="tooltip" data-original-title="Add to Compare"><i class="lastudioicon-compare"></i></button>
+//                                                </div>
+//                                            </div>
+//                                            <div class="product-content">
+//                                                <h4><a href="product-details.html">Midi printed dress</a></h4>
+//                                                <div class="product-price">
+//                                                    <span>$49.99</span>
+//                                                </div>
+//                                            </div>
+//                                        </div>
+//                                    </div>
+//                                    <div class="col-xl-3 col-lg-3 col-md-6 col-12 col-sm-6">
+//                                        <div class="product-wrap mb-35">
+<!--                                            <div class="product-img mb-15">-->
+<!--                                                <a href="product-details.html">-->
+<!--                                                    <img class="default-img" src="/assets/images/product/hm-fashion-pro8-1.jpg" alt="">-->
+<!--                                                    <img class="hover-img" src="/assets/images/product/hm-fashion-pro8-2.jpg" alt="">-->
+<!--                                                </a>-->
+<!--                                                <div class="product-action-wrap">-->
+<!--                                                    <button data-bs-toggle="tooltip" data-original-title="Add to Cart"><i class="lastudioicon-shopping-cart-3"></i></button>-->
+<!--                                                    <button data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="lastudioicon-eye"></i><span>Quick View</span></button>-->
+<!--                                                    <button data-bs-toggle="tooltip" data-original-title="Add to Wishlist"><i class="lastudioicon-heart-2"></i></button>-->
+<!--                                                    <button data-bs-toggle="tooltip" data-original-title="Add to Compare"><i class="lastudioicon-compare"></i></button>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                            <div class="product-content">-->
+<!--                                                <h4><a href="product-details.html">Midi printed dress</a></h4>-->
+<!--                                                <div class="product-price">-->
+<!--                                                    <span>$19.99 - 49.99</span>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
                         </div>
                     </div>
                 </div>

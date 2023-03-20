@@ -7,53 +7,53 @@
                         <div class="footer-widget footer-about mb-35">
                             <div class="footer-logo logo-width-2">
                                 <a href="index-2.html">
-                                    <img src="/assets/images/logo/logo-white-2.png" alt="logo">
+                                    <h1 style="color: white">BHAVANA</h1>
                                 </a>
                             </div>
-                            <p>Cras dui neque, pharetra in pellentesque sed, sollicitudin id quam.</p>
-                            <div class="footer-instagram">
-                                <div class="insta-icon">
-                                    <i class="lastudioicon-b-instagram"></i>
-                                </div>
-                                <div class="instagram-wrap-1">
-                                    <div class="single-instafeed-wrap">
-                                        <div class="single-instafeed">
-                                            <a href="#"><img src="/assets/images/instafeed/insta-15.jpg" alt=""></a>
-                                            <div class="insta-icon-digit">
-                                                <a href="#"><i class="lastudioicon-heart-2"></i></a>
-                                                <a href="#">1</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="single-instafeed-wrap">
-                                        <div class="single-instafeed">
-                                            <a href="#"><img src="/assets/images/instafeed/insta-6.jpg" alt=""></a>
-                                            <div class="insta-icon-digit">
-                                                <a href="#"><i class="lastudioicon-heart-2"></i></a>
-                                                <a href="#">2</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="single-instafeed-wrap">
-                                        <div class="single-instafeed">
-                                            <a href="#"><img src="/assets/images/instafeed/insta-7.jpg" alt=""></a>
-                                            <div class="insta-icon-digit">
-                                                <a href="#"><i class="lastudioicon-heart-2"></i></a>
-                                                <a href="#">3</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="single-instafeed-wrap">
-                                        <div class="single-instafeed">
-                                            <a href="#"><img src="/assets/images/instafeed/insta-8.jpg" alt=""></a>
-                                            <div class="insta-icon-digit">
-                                                <a href="#"><i class="lastudioicon-heart-2"></i></a>
-                                                <a href="#">4</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <p>Bags that make a Statement.</p>
+<!--                            <div class="footer-instagram">-->
+<!--                                <div class="insta-icon">-->
+<!--                                    <i class="lastudioicon-b-instagram"></i>-->
+<!--                                </div>-->
+<!--                                <div class="instagram-wrap-1">-->
+<!--                                    <div class="single-instafeed-wrap">-->
+<!--                                        <div class="single-instafeed">-->
+<!--                                            <a href="#"><img src="/assets/images/instafeed/insta-15.jpg" alt=""></a>-->
+<!--                                            <div class="insta-icon-digit">-->
+<!--                                                <a href="#"><i class="lastudioicon-heart-2"></i></a>-->
+<!--                                                <a href="#">1</a>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="single-instafeed-wrap">-->
+<!--                                        <div class="single-instafeed">-->
+<!--                                            <a href="#"><img src="/assets/images/instafeed/insta-6.jpg" alt=""></a>-->
+<!--                                            <div class="insta-icon-digit">-->
+<!--                                                <a href="#"><i class="lastudioicon-heart-2"></i></a>-->
+<!--                                                <a href="#">2</a>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="single-instafeed-wrap">-->
+<!--                                        <div class="single-instafeed">-->
+<!--                                            <a href="#"><img src="/assets/images/instafeed/insta-7.jpg" alt=""></a>-->
+<!--                                            <div class="insta-icon-digit">-->
+<!--                                                <a href="#"><i class="lastudioicon-heart-2"></i></a>-->
+<!--                                                <a href="#">3</a>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="single-instafeed-wrap">-->
+<!--                                        <div class="single-instafeed">-->
+<!--                                            <a href="#"><img src="/assets/images/instafeed/insta-8.jpg" alt=""></a>-->
+<!--                                            <div class="insta-icon-digit">-->
+<!--                                                <a href="#"><i class="lastudioicon-heart-2"></i></a>-->
+<!--                                                <a href="#">4</a>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
                         </div>
                     </div>
                     <div class="footer-column footer-width-14">
@@ -68,20 +68,6 @@
                                     <li><a href="#">Licenses</a></li>
                                     <li><a href="#">Market API</a></li>
                                     <li><a href="#">Site Map</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer-column footer-width-16">
-                        <div class="footer-widget mb-40">
-                            <div class="footer-title">
-                                <h3>More form Lauriel</h3>
-                            </div>
-                            <div class="footer-list">
-                                <ul>
-                                    <li><a href="#">Mobile and Lauriel Apps</a></li>
-                                    <li><a href="#">Lauriel Marketplace</a></li>
-                                    <li><a href="#">Gift vouchers</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -135,7 +121,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="copyright text-center">
-                            <p>Copyright © 2023 HasThemes | <a href="https://hasthemes.com/">Built with LAURIEL by HasThemes</a>.</p>
+                            <p>Copyright © 2023 House Of Bhavana.</p>
                         </div>
                     </div>
                 </div>

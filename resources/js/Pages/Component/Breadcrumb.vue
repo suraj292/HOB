@@ -6,7 +6,7 @@
                     <li>
                         <router-link :to="{ name: 'home'}">Home </router-link>
                     </li>
-                    <li v-if="category!=null">
+                    <li v-if="category===null">
                         <span >Product </span>
                     </li>
                     <li v-if="category!=null">

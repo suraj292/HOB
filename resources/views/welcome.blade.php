@@ -31,14 +31,90 @@
             .draggable{
                 min-height: 300px !important;
             }
+            .f {
+                display: flex;
+            }
+            .a {
+                align-items: center;
+            }
+            .j {
+                justify-content: center;
+            }
+            .cn {
+                /*
+                height: 100vh;
+                 */
+            }
+            .wp {
+                /*
+                --t: 900px;
+                width: var(--t);
+                 */
+                width: 100%;
+            }
+            .wp aside {
+                width: 80%;
+            }
+            .wp aside:last-child {
+                padding: 0 0 0 10px;
+            }
+            .mgt {
+                margin-top: 10px;
+            }
+            /* Zoom styles */
+            .zoom, .original {
+                position: relative;
+            }
+            .zoom {
+                display: inline-block;
+            }
+            .original {
+                cursor: crosshair;
+            }
+            #target {
+                //width: calc(var(--t) / 2);
+                width: 100%;
+            }
+            .zoom .viewer {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+            .zoom .viewer img {
+                position: absolute;
+            }
+            .magnifier {
+                position: absolute;
+                //background: #0000000;
+                opacity: 0.7;
+                top: 0;
+                left: 0;
+            }
+            .magnifier, .viewer {
+                display: none;
+            }
+            .original:hover ~ div {
+                display: block;
+            }
+            .original::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 1;
+            }
         </style>
         @vite(['resources/css/app.css'])
 
     </head>
     <body>
 
-    <div class="main-wrapper main-wrapper-2" id="app">
-{{--        <app></app>--}}
+    <div class="main-wrapper main-wrapper-2">
+        <div id="app"></div>
     </div>
 
         <!-- All JS is here
@@ -67,11 +143,12 @@
         <script src="{{ asset('assets/js/plugins/scrollup.js') }}"></script>
         <script src="{{ asset('assets/js/plugins/select2.min.js') }}"></script>
         <script src="{{ asset('assets/js/plugins/jquery.mb.ytplayer.min.js') }}"></script>
-        <script src="{{ asset('assets/js/plugins/ajax-mail.js') }}"></script>
+{{--        <script src="{{ asset('assets/js/plugins/ajax-mail.js') }}"></script>--}}
 {{--        <script type="application/javascript" src="{{ asset('assets/js/main.js') }}" ></script>--}}
 {{--    @vite(['resources/js/app.js', 'public/assets/js/main.js'])--}}
 {{--    @vite(['resources/js/app.js', 'resources/js/main.js'])--}}
 {{--    @vite('resources/js/main.js')--}}
+    <script type="text/javascript" src="{{ asset('assets/zoom.js') }}"></script>
     @vite(['resources/js/app.js'])
     </body>
 </html>

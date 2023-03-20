@@ -6,7 +6,7 @@
                     <div class="col-xl-2 col-lg-3">
                         <div class="logo logo-width-1">
                             <router-link :to="{ name: 'home' }">
-                                <img src="/assets/images/logo/logo.svg" alt="logo">
+                                <h1>BHAVANA</h1>
                             </router-link>
                         </div>
                     </div>
@@ -23,8 +23,8 @@
                                                     <li>
                                                         <a href="#">Shop Layout</a>
                                                         <ul>
-                                                            <li><router-link :to="{ name: 'product' }">Product</router-link></li>
-                                                            <li><router-link :to="{name:'productDetail'}">Product Detail</router-link></li>
+                                                            <li><router-link :to="{ name: 'product', params: { category: 123, subCategory: 233 } }">Product</router-link></li>
+<!--                                                            <li><router-link :to="{name:'productDetail', }">Product Detail</router-link></li>-->
                                                             <li><router-link :to="{name:'loginRegister'}">Login Register</router-link></li>
                                                             <li><router-link :to="{name:'myAccount'}">My Account</router-link></li>
                                                             <li><router-link :to="{name:'about'}">About</router-link></li>
@@ -95,7 +95,7 @@
                             <div class="same-style same-style-black header-cart">
                                 <a class="cart-active yellow" href="#">
                                     <i class="lastudioicon-bag-20"></i>
-                                    <span class="yellow">02</span>
+                                    <span class="yellow">{{ cart.length || 0 }}</span>
                                 </a>
                             </div>
                             <div class="same-style same-style-black header-login">
@@ -115,7 +115,7 @@
                     <div class="col-6">
                         <div class="mobile-logo mobile-logo-width">
                             <router-link :to="{name:'home'}">
-                                <img src="/assets/images/logo/logo.svg" alt="">
+                                <h1>BHAVANA</h1>
                             </router-link>
                         </div>
                     </div>
@@ -142,8 +142,13 @@
 </template>
 
 <script>
+import {mapState} from "pinia";
+import {StoreCart} from "@/StoreCart";
 export default {
     name: "Header2",
+    computed:{
+        ...mapState(StoreCart, ['cart'])
+    },
     mounted() {
         /*=====================================
            Video Background JS

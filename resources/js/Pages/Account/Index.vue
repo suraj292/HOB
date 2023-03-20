@@ -8,19 +8,21 @@
                         <div class="login-register-wrap">
                             <h3 class="login-active"><i class="lastudioicon-a-check"></i> Login</h3>
                             <div class="login-register-form login-form">
-                                <form action="#">
+                                <form @submit.prevent="login">
                                     <div class="sin-login-register">
                                         <label>Username or email address * </label>
-                                        <input type="text" name="user-name">
+                                        <input type="text" name="user-name" v-model="loginData.email">
+                                        <span class="text-danger" v-if="errors && errors.email">{{ errors.email[0] }}</span>
                                     </div>
                                     <div class="sin-login-register">
                                         <label>Password * </label>
-                                        <input type="password">
+                                        <input type="password" v-model="loginData.password">
+                                        <span class="text-danger" v-if="errors && errors.password">{{ errors.password[0] }}</span>
                                     </div>
-                                    <div class="login-register-remember">
-                                        <input type="checkbox">
-                                        <label>Remember me</label>
-                                    </div>
+<!--                                    <div class="login-register-remember">-->
+<!--                                        <input type="checkbox">-->
+<!--                                        <label>Remember me</label>-->
+<!--                                    </div>-->
                                     <div class="login-register-btn">
                                         <button type="submit">Log in</button>
                                     </div>
@@ -85,11 +87,38 @@
 
 <script>
 import Breadcrumb from "@/Pages/Component/Breadcrumb.vue";
+import Http from "@/Connection/http-connection";
+import {mapState} from "pinia";
+import {StoreUser} from "@/StoreUser";
 
 export default {
     name: "Index",
     components: {Breadcrumb},
+    data(){
+      return {
+          loginData: [],
+          errors: null,
+      }
+    },
+    methods:{
+      login(){
+          Http.post('login', {
+              email: this.loginData.email,
+              password: this.loginData.password
+          })
+              .then(res => {
+                  StoreUser().setUser(res.data.token, JSON.stringify(res.data.user))
+                  window.location.href = "";
+                  // console.log(res.data)
+              })
+              .catch(err => {
+                  this.errors = err.response.data.errors
+                  console.log(err.response.data.message)
+              })
+      }
+    },
     mounted() {
+        // console.log(StoreUser().getUser)
         /*-----------------------
         Login register active
     ------------------------- */

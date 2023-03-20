@@ -13,7 +13,6 @@
 </template>
 
 <script>
-import Breadcrumb from "@/Pages/Component/Breadcrumb.vue";
 import BreadcrumbImage from "@/Pages/Component/BreadcrumbImage.vue";
 import AllProduct from "@/Pages/Product/AllProduct.vue";
 import ProductFilter from "@/Pages/Product/ProductFilter.vue";
@@ -21,7 +20,7 @@ import ProductVendorContact from "@/Pages/Product/ProductVendorContact.vue";
 
 export default {
     name: "Product",
-    components: {ProductVendorContact, ProductFilter, AllProduct, BreadcrumbImage, Breadcrumb},
+    components: {ProductVendorContact, ProductFilter, AllProduct, BreadcrumbImage},
     mounted() {
         /*---------------------
         Mobile menu

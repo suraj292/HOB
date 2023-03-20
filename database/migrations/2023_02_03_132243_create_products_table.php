@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('size');
             $table->string('description');
+            $table->longText('specification');
             $table->decimal('price', 8, 2);
             $table->decimal('offer_price', 8, 2)->nullable();
             $table->string('gender');

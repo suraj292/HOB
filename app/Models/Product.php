@@ -14,6 +14,7 @@ class Product extends Model
         'title',
         'size',
         'description',
+        'specification',
         'price',
         'offer_price',
         'gender',

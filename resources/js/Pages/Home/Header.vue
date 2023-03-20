@@ -23,8 +23,8 @@
                                                     <li>
                                                         <a href="#">Shop Layout</a>
                                                         <ul>
-                                                            <li><router-link :to="{ name: 'product' }">Product</router-link></li>
-                                                            <li><router-link :to="{name:'productDetail'}">Product Detail</router-link></li>
+<!--                                                            <li><router-link :to="{ name: 'product' }">Product</router-link></li>-->
+<!--                                                            <li><router-link :to="{name:'productDetail'}">Product Detail</router-link></li>-->
                                                             <li><router-link :to="{name:'loginRegister'}">Login Register</router-link></li>
                                                             <li><router-link :to="{name:'myAccount'}">My Account</router-link></li>
                                                             <li><router-link :to="{name:'about'}">About</router-link></li>
@@ -39,21 +39,9 @@
                                                     <li>
                                                         <a href="#">Products Layout</a>
                                                         <ul>
-                                                            <li><a href="product-details.html">Simple 01</a></li>
-                                                            <li><a href="cart.html">Shopping Cart</a></li>
-                                                            <li><a href="product-details-2.html">Simple 02</a></li>
-                                                            <li><a href="checkout.html">Check Out</a></li>
-                                                            <li><a href="product-details-configurable.html">Product Variable</a></li>
-                                                            <li><a href="my-account.html">My Account</a></li>
-                                                            <li><a href="product-details-group.html">Product Grouped</a></li>
-                                                            <li><a href="wishlist.html">Wishlist</a></li>
-                                                            <li><a href="product-details-affiliate.html">Product Affiliate</a></li>
-                                                            <li><a href="compare.html">Compare</a></li>
-                                                            <li><a href="product-details-sticky.html">Product Sticky</a></li>
-                                                            <li><a href="order-tracking.html">Order Tracking</a></li>
-                                                            <li><a href="product-details-thumbnail.html">Product Thumbnail</a></li>
-                                                            <li><a href="login-register.html">Login Register</a></li>
-                                                            <li><a href="product-details-custom-style.html">Product Custom Style</a></li>
+                                                            <li v-for="cat in category">
+                                                                <router-link :to="{ name: 'product', params: { category: cat.product_category_id ?? 0, subCategory: cat.id ?? 0 } }">{{ cat.product_sub_category_name }}</router-link>
+                                                            </li>
                                                         </ul>
                                                     </li>
                                                     <li>
@@ -86,7 +74,11 @@
                                 </ul>
                             </nav>
                             <div class="leather-logo">
-                                <router-link :to="{name:'home'}"><img src="/assets/images/logo/leather-logo-white.png" alt="logo"></router-link>
+                                <router-link :to="{name:'home'}">
+                                    <h1 style="color:white">
+                                        BHAVANA
+                                    </h1>
+                                </router-link>
                             </div>
                         </div>
                     </div>
@@ -98,8 +90,11 @@
                             <div class="same-style header-cart">
                                 <a class="cart-active" href="#">
                                     <i class="lastudioicon-bag-20"></i>
-                                    <span class="yellow">02</span>
+                                    <span class="yellow">{{ cart.length || 0 }}</span>
                                 </a>
+                            </div>
+                            <div class="same-style same-style-white header-login">
+                                <router-link class="yellow" :to="{name:'loginRegister'}"><i class="lastudioicon-single-01-2"></i></router-link>
                             </div>
                         </div>
                     </div>
@@ -136,8 +131,34 @@
 </template>
 
 <script>
+import Http from '@/Connection/http-connection';
+import {mapState} from "pinia";
+import {StoreCart} from "@/StoreCart";
 export default {
     name: "Header",
+    computed:{
+        ...mapState(StoreCart, ['cart'])
+    },
+    data(){
+        return {
+            category: '',
+        }
+    },
+    methods:{
+        getCategory(){
+            Http.get('sub-category')
+                .then(res => {
+                    this.category = res.data.data
+                    console.log(res.data.data)
+                })
+                .catch(err => {
+                    console.log(err.response)
+                })
+        }
+    },
+    mounted() {
+        this.getCategory()
+    }
 }
 </script>
 

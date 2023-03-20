@@ -1,15 +1,18 @@
 <template>
     <div class="youtube-video-area">
-        <div class="video-bg player" data-url="https://youtu.be/I2P22HzEVjs"></div>
+        <div class="video-bg player" data-url="https://youtu.be/khOVlJh1Bp8"></div>
         <div class="video-bg-content-wrap">
             <div class="container h-100">
                 <div class="row align-items-center h-100">
                     <div class="col-12 m-auto text-center">
                         <div class="youtube-bg-content text-center">
                             <h2 class="wow shortfadeInUp custom-delay-300">What’s your passion </h2>
-                            <p class=" wow shortfadeInUp custom-delay-500">Mauris ornare leo id nunc porta, sit amet posuere </p>
-                            <div class="btn-style-1 wow shortfadeInUp custom-delay-600">
-                                <a class="animated btn-1-font-2 btn-1-padding-dec-2" href="product-details.html">SHOP NOW </a>
+                            <p class=" wow shortfadeInUp custom-delay-500">Experience the luxury of Italian leather with our handcrafted handbags. </p>
+<!--                            <div class="btn-style-1 wow shortfadeInUp custom-delay-600">-->
+<!--                                <a class="animated btn-1-font-2 btn-1-padding-dec-2" href="product-details.html">SHOP NOW </a>-->
+<!--                            </div>-->
+                            <div class="btn-style-7">
+                                <a class="white" href="product-details.html">Shop now</a>
                             </div>
                         </div>
                     </div>

@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('coupons', function (Blueprint $table) {
             $table->id();
             $table->string('coupon_code');
+            $table->integer('percentage');
             $table->integer('max_value');
             $table->boolean('active')->default(0);
             $table->date('expiry');

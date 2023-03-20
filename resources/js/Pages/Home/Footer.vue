@@ -6,7 +6,7 @@
                     <div class="col-12">
                         <div class="footer-logo footer-leather-logo text-center mb-50">
                             <a href="index-2.html">
-                                <img src="/assets/images/logo/logo-black.png" alt="logo">
+                                <h1>BHAVANA</h1>
                             </a>
                             <p>Handcrafted just for you.</p>
                         </div>

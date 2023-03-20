@@ -192,37 +192,26 @@
             <div class="cart-content">
                 <h3>Shopping Cart</h3>
                 <ul>
-                    <li class="single-product-cart">
+                    <li class="single-product-cart" v-for="(product, index) in cart" :key="index">
                         <div class="cart-img">
-                            <a href="#"><img src="/assets/images/cart/cart-1.jpg" alt=""></a>
+                            <a href="#"><img :src="product.image" alt=""></a>
                         </div>
                         <div class="cart-title">
-                            <h4><a href="product-details.html">Midi printed dress</a></h4>
-                            <span> 1 × ₹49.00	</span>
+                            <h4><a href="product-details.html">{{  product.title }}</a></h4>
+                            <span v-if="product.offer"> {{ product.quantity }} × ₹{{ product.offer }}	</span>
+                            <span v-else> {{ product.quantity }} × ₹{{ product.price }}	</span>
                         </div>
                         <div class="cart-delete">
-                            <a href="#">×</a>
-                        </div>
-                    </li>
-                    <li class="single-product-cart">
-                        <div class="cart-img">
-                            <a href="#"><img src="/assets/images/cart/cart-2.jpg" alt=""></a>
-                        </div>
-                        <div class="cart-title">
-                            <h4><a href="product-details.html">Midi printed dress</a></h4>
-                            <span> 1 × ₹49.00	</span>
-                        </div>
-                        <div class="cart-delete">
-                            <a href="#">×</a>
+                            <a @click="removeCart(product.id)">×</a>
                         </div>
                     </li>
                 </ul>
                 <div class="cart-total">
-                    <h4>Subtotal: <span>₹170.00</span></h4>
+                    <h4>Subtotal: <span>₹{{ cartTotalAmount() }}</span></h4>
                 </div>
                 <div class="cart-checkout-btn">
-                    <a class="btn-hover cart-btn-style" href="cart.html">view cart</a>
-                    <a class="no-mrg btn-hover cart-btn-style" href="checkout.html">checkout</a>
+                    <router-link class="btn-hover cart-btn-style" :to="{name: 'cart'}">view cart</router-link>
+                    <router-link class="no-mrg btn-hover cart-btn-style" :to="{ name: 'checkout' }">checkout</router-link>
                 </div>
             </div>
         </div>
@@ -230,8 +219,33 @@
 </template>
 
 <script>
+import {mapState} from "pinia";
+import {StoreCart} from "@/StoreCart";
 export default {
-    name: "Navigation"
+    name: "Navigation",
+    computed:{
+        ...mapState(StoreCart, ['cart'])
+    },
+    methods:{
+        cartTotalAmount() {
+            let total = 0;
+            for (let item in this.cart) {
+                if (this.cart[item].offer){
+                    var amount =  this.cart[item].offer
+                }else {
+                    var amount =  this.cart[item].price
+                }
+                total = total + (this.cart[item].quantity * amount)
+            }
+            return total;
+        },
+        removeCart(id){
+            StoreCart().removeProduct(id)
+        },
+    },
+    mounted() {
+        // console.log(this.cart)
+    }
 }
 </script>
 

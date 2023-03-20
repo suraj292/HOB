@@ -10,9 +10,9 @@
                     <div class="product-phn-content text-center">
                         <h2 class=" wow shortfadeInUp custom-delay-500">Iphone 11 Promax</h2>
                         <p class=" wow shortfadeInUp custom-delay-600">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</p>
-                        <div class="btn-style-4 wow shortfadeInUp custom-delay-700">
-                            <a class="animated padding-dec-2" href="product-details.html">Shop now </a>
-                        </div>
+<!--                        <div class="btn-style-4 wow shortfadeInUp custom-delay-700">-->
+<!--                            <a class="animated padding-dec-2" href="product-details.html">Shop now </a>-->
+<!--                        </div>-->
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-5">
@@ -29,9 +29,9 @@
                 <div class="col-lg-6 col-md-7">
                     <div class="product-radio-content text-center">
                         <h2 class="wow shortfadeInUp custom-delay-400">Bush DAB Bluetooth Wooden Radio</h2>
-                        <div class="btn-style-4 wow shortfadeInUp custom-delay-500">
-                            <a class="animated padding-dec-2" href="product-details.html">Shop now </a>
-                        </div>
+<!--                        <div class="btn-style-4 wow shortfadeInUp custom-delay-500">-->
+<!--                            <a class="animated padding-dec-2" href="product-details.html">Shop now </a>-->
+<!--                        </div>-->
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-5">

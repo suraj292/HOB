@@ -41,10 +41,10 @@
                 <div class="col-36-contact">
                     <div class="contact-info-area">
                         <ul>
-                            <li><i class="lastudioicon-phone-call-2"></i><span> +55 858 5858 68</span></li>
-                            <li><i class="lastudioicon-email"></i> <span>support@hastech.com</span></li>
-                            <li><a href="#"><i class="lastudioicon-b-comment"></i> <span>Live chat with us</span></a></li>
-                            <li><i class="lastudioicon-pin-3-2"></i> <span>PO Box 16122 Collins Street West Victoria 8007 Australia</span></li>
+<!--                            <li><i class="lastudioicon-phone-call-2"></i><span> +55 858 5858 68</span></li>-->
+                            <li><i class="lastudioicon-email"></i> <span>care@houseofbhavana.in</span></li>
+<!--                            <li><a href="#"><i class="lastudioicon-b-comment"></i> <span>Live chat with us</span></a></li>-->
+<!--                            <li><i class="lastudioicon-pin-3-2"></i> <span>PO Box 16122 Collins Street West Victoria 8007 Australia</span></li>-->
                         </ul>
                         <div class="contact-info-social">
                             <a href="#"><i class="lastudioicon-b-facebook"></i></a>

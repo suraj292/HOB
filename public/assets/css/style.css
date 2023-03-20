@@ -32030,7 +32030,7 @@ select.select-img {
 
 @media only screen and (min-width: 1366px) and (max-width: 1600px) {
   .product-dec-right {
-    width: calc(100% - 125px);
+    /*width: calc(100% - 125px);*/
   }
 }
 

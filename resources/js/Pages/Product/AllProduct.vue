@@ -37,24 +37,36 @@
                 <div id="shop-1" class="tab-pane active">
                     <div class="row product-responsive">
                         <!-- product loop starts -->
-                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12" v-for="(product, index) in products" :key="index">
                             <div class="product-wrap mb-35">
                                 <div class="product-img mb-15">
-                                    <a href="/product/detail">
-                                        <img class="default-img" src="/assets/images/product/hm-fashion-pro1-1.jpg" alt="">
-                                        <img class="hover-img" src="/assets/images/product/hm-fashion-pro1-2.jpg" alt="">
-                                    </a>
+                                    <router-link :to="{name:'productDetail', params: { id: product.id }}">
+                                        <img class="default-img" :src=" product.image[0].product_images.split(',')[0] " alt="">
+                                        <img class="hover-img" :src=" product.image[0].product_images.split(',')[1] " alt="">
+                                    </router-link>
                                     <div class="product-action-wrap">
-                                        <button data-bs-toggle="tooltip" data-original-title="Add to Cart"><i class="lastudioicon-shopping-cart-3"></i></button>
-                                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="lastudioicon-eye"></i><span>Quick View</span></button>
-                                        <button data-bs-toggle="tooltip" data-original-title="Add to Wishlist"><i class="lastudioicon-heart-2"></i></button>
-                                        <button data-bs-toggle="tooltip" data-original-title="Add to Compare"><i class="lastudioicon-compare"></i></button>
+<!--                                        <button data-bs-toggle="tooltip" data-original-title="Add to Cart"><i class="lastudioicon-shopping-cart-3"></i></button>-->
+<!--                                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="lastudioicon-eye"></i><span>Quick View</span></button>-->
+<!--                                        <button data-bs-toggle="tooltip" data-original-title="Add to Wishlist"><i class="lastudioicon-heart-2"></i></button>-->
+<!--                                        <button data-bs-toggle="tooltip" data-original-title="Add to Compare"><i class="lastudioicon-compare"></i></button>-->
                                     </div>
                                 </div>
                                 <div class="product-content">
-                                    <h4><router-link :to="{ name: 'productDetail' }">Midi printed dress</router-link></h4>
-                                    <div class="product-price">
-                                        <span>₹49.99</span>
+<!--                                    <h4>{{ product.image[0].product_images.split(',')[0] }}</h4>-->
+                                    <h4>
+                                        <router-link class="uppercase" :to="{name:'productDetail', params: { id: product.id }}">{{ product.title }}</router-link>
+                                    </h4>
+                                    <div class="row">
+                                        <div class="col-1" v-for="color in product.image">
+                                            <img :src="color.color_icon" alt="" width="25" class="rounded-circle">
+                                        </div>
+                                    </div>
+                                    <div class="product-price" v-if="product.offer_price">
+                                        <span>₹{{ product.offer_price }}&nbsp;</span>
+                                        <del style="color: orangered;"> ₹{{ product.price }}</del>
+                                    </div>
+                                    <div class="product-price" v-else>
+                                        <span>₹{{ product.price }}</span>
                                     </div>
                                 </div>
                             </div>
@@ -77,8 +89,32 @@
 </template>
 
 <script>
+import Http from './../../Connection/http-connection';
 export default {
-    name: "AllProduct"
+    name: "AllProduct",
+    data(){
+        return {
+            cateId: this.$route.params.category != null ? this.$route.params.category: null,
+            subId: this.$route.params.subCategory != null ? this.$route.params.subCategory: null,
+            products: null,
+        }
+    },
+    methods:{
+        getProduct(){
+            Http.get('productSubCategory?category='+this.cateId+'&subcategory='+this.subId)
+                .then(res => {
+                    this.products = res.data.Product
+                    console.log(res.data.Product)
+                })
+                .catch(err => {
+                    console.log(err)
+                })
+            // console.log('cat :' + this.$route.params.category + ' //// ' + 'sub :' + this.$route.params.subCategory)
+        },
+    },
+    mounted() {
+        this.getProduct()
+    }
 }
 </script>
 

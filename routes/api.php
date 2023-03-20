@@ -11,9 +11,10 @@ use App\Http\Controllers\Api\ProductImageController;
 use App\Http\Controllers\Api\CouponController;
 use App\Http\Controllers\Api\SlugController;
 use App\Http\Controllers\Api\CartController;
+use App\Http\Controllers\Api\iThinkLogisticsController;
+use App\Http\Controllers\Api\RazorpayController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -24,7 +25,6 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
@@ -63,6 +63,16 @@ Route::middleware('auth:sanctum')->group(function () {
         return 'UserStore Dashboard';
     });
 });
+// Logistics
+Route::group(['prefix' => 'logistics'], function () {
+    Route::post('/state', [iThinkLogisticsController::class, 'getState']);
+    Route::post('/city/{id}', [iThinkLogisticsController::class, 'getCity']);
+    Route::post('/pincode/{pincode}', [iThinkLogisticsController::class, 'getPincode']);
+});
+
+// Razorpay Payment Gateway
+Route::post('/razorpay', [RazorpayController::class, 'getOrder']);
+Route::get('/success', [RazorpayController::class, 'success']);
 
 // Admin
 Route::middleware(['auth:sanctum', 'role:admin'])->group(function () {
